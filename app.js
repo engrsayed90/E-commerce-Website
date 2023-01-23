@@ -64,12 +64,12 @@ menuItems.forEach((item, index) => {
     // change the choosen Product
     choosenProducts = products[index];
 
-    //change texts of currentProduct
+    // change texts of currentProduct
     currentProductTitle.textContent = choosenProducts.title;
     currentProductPrice.textContent = "$" + choosenProducts.price;
     currentProductImg.src = choosenProducts.colors[0].img;
 
-    //assing new colors
+    // assign new colors
     currentProductColors.forEach((color, index) => {
       color.style.backgroundColor = choosenProducts.colors[index].code;
     });
